@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+}
+header{
+    width: 100%;
+    height: 70px;
+}
+nav {
+    height: 100%;
+    width: 100%;
+    background-color: #6047EC;
+    align-items: center;
+    display: flex;
+    box-shadow: 0px 3px 12px white;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    
+
+    
+}
+.left{
+    display: flex;
+}
+nav ul li{
+    padding: 10px 10px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    transition: all .3s;
+}
+nav ul li a:hover{
+    color: gray;
+}
+
+nav ul li a:hover .color{
+color: white;
+}
+.color{
+    font-size: 1.2em;
+    color: gray;
+    padding-left: 5px;
+    transition: all .3s;
+}
+.d-flex{
+    display: flex;
+    margin-right: 20px;
+   }
+main{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .main-img{
+       text-align: center;
+   }
+   h1{
+       font-size: 4em;
+       margin-top: 20px;
+       position: relative;
+       white-space: nowrap;
+       color: white;
+   }
+   .main-img img{
+       height: 300px;
+       border-radius: 50%;
+       border: 4px solid #6047EC;
+   }
+   h1::before{
+       content: 'Sayman Rabbi';
+       position: absolute;
+       top: 0;
+       left: 0;
+       color: #6047EC;
+       animation: animation 9s linear infinite;
+      
+   }
+   @keyframes animation{
+       0%{
+           content: 'S|';
+       }
+       6%{
+        content: 'Sa|';
+    }
+    12%{
+        content: 'Say|';
+    }
+    18%{
+        content: 'Saym|';
+    }
+    24%{
+        content: 'Sayma|';
+    }
+    30%{
+        content: 'Sayman|';
+    }
+    36%{
+        content: 'Sayman |';
+    }
+    42%{
+        content: 'Sayman R|';
+    }
+    48%{
+        content: 'Sayman Ra|';
+    }
+    54%{
+        content: 'Sayman Rab|';
+    }
+    60%{
+        content: 'Sayman Rabb|';
+    }
+    66%{
+        content: 'Sayman Rabbi|';
+    }
+    72%{
+        content: 'Sayman Rabbi|';
+    }
+    72%,88%{
+        content: 'Sayman Rabbi|';
+    }
+    89%{
+        content: 'Sayman Rabb|';
+    }
+    90%{
+        content: 'Sayman Rab|';
+    }
+    91%{
+        content: 'Sayman Ra|';
+    }
+    92%{
+        content: 'Sayman R|';
+    }
+    93%{
+        content: 'Sayman |';
+    }
+    94%{
+        content: 'Sayman|';
+    }
+    95%{
+        content: 'Sayma|';
+    }
+    96%{
+        content: 'Saym|';
+    }
+    97%{
+        content: 'Say|';
+    }
+    98%{
+        content: 'Sa|';
+    }
+    99%{
+        content: 'S|';
+    }
+    100%{
+        content: '|';
+    }
+}
